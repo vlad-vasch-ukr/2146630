@@ -1,8 +1,275 @@
-.ba-menu {
-  display: flex;
-  align-items: center;
-  list-style: none; }
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
-.ba-menu__link {
-  color: inherit;
-  text-decoration: none; }
+.body {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.container {
+  max-width: 489px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px; }
+  @media screen and (min-width: 485px) {
+    .container {
+      padding: 0 20px; } }
+
+.test-card {
+  padding-top: 21px;
+  position: relative; }
+
+.test-user__photo {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px; }
+  @media screen and (min-width: 410px) {
+    .test-user__photo {
+      height: 110px;
+      width: 110px;
+      top: 13px; } }
+  @media screen and (min-width: 485px) {
+    .test-user__photo {
+      height: 124px;
+      width: 124px; } }
+
+.test-user__info {
+  margin-left: 90px;
+  margin-top: 5px; }
+  @media screen and (min-width: 410px) {
+    .test-user__info {
+      margin-left: 135px;
+      margin-top: 30px; } }
+  @media screen and (min-width: 485px) {
+    .test-user__info {
+      margin-top: 0;
+      margin-left: 151px; } }
+
+.test-user__name {
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem; }
+
+.test-user__position {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: #808080; }
+
+.test-user__comment {
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+  margin: 0 0 0 auto; }
+  .test-user__comment-wrapper {
+    width: 100%;
+    background-color: #FFFBC8;
+    border: 1px solid #DADADA;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: auto;
+    margin-top: 25px; }
+    @media screen and (min-width: 410px) {
+      .test-user__comment-wrapper {
+        margin-top: 35px; } }
+    @media screen and (min-width: 485px) {
+      .test-user__comment-wrapper {
+        width: 81%;
+        margin-top: 5px;
+        margin-left: auto;
+        padding: 10px 10px 10px 65px; } }
+
+.test-services {
+  margin-top: 15px; }
+  @media screen and (min-width: 410px) {
+    .test-services {
+      width: 317px;
+      margin-left: auto; } }
+  .test-services__title {
+    font-size: 0.8125rem;
+    line-height: 0.9375rem;
+    margin-right: 30px;
+    margin-bottom: 7px;
+    text-align: right; }
+  .test-services__line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #DADADA; }
+  .test-services__graph {
+    margin: 14px 0 14px 0;
+    border-left: 1px solid rgba(51, 51, 51, 0.2); }
+  .test-services__total-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    margin-top: 9px; }
+  .test-services__total {
+    margin-right: 42px; }
+
+.test-graph__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  padding-left: 6px;
+  padding-right: 40px; }
+
+.test-graph__row + .test-graph__row {
+  margin-top: 3px; }
+
+.test-graph__name, .test-graph__quantity {
+  font-size: 0.8125rem;
+  line-height: 1.625rem;
+  color: #333333; }
+
+.test-graph__drawing {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  border-radius: 0px 3px 3px 0px;
+  z-index: -1; }
+
+.test-graph__row:nth-child(1) .test-graph__drawing {
+  width: 69.09%;
+  background-color: #B1E19B; }
+
+.test-graph__row:nth-child(2) .test-graph__drawing {
+  width: 17.04%;
+  background-color: #ACE2F8; }
+
+.test-graph__row:nth-child(3) .test-graph__drawing {
+  width: 11.36%;
+  background-color: #ACE2F8; }
+
+.test-comments {
+  margin-top: 20px; }
+  .test-comments-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 11px; }
+
+.test-header__title {
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1rem; }
+  @media screen and (min-width: 410px) {
+    .test-header__title {
+      font-size: 1rem; } }
+
+.test-header__link {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: #005DA1;
+  margin-left: 4px; }
+  @media screen and (min-width: 410px) {
+    .test-header__link {
+      margin-left: 10px; } }
+
+.test-header__total-likes, .test-header__total-comments {
+  font-size: 0.75rem;
+  line-height: 0.875rem; }
+
+.test-header__total-comments {
+  margin-left: 5px; }
+  @media screen and (min-width: 410px) {
+    .test-header__total-comments {
+      margin-left: 16px; } }
+
+.test-header__total-likes::before {
+  content: url(../img/like.png);
+  position: relative;
+  top: 2px;
+  right: 3px; }
+
+.test-header__total-comments::before {
+  content: url(../img/comment.png);
+  position: relative;
+  top: 5px;
+  right: 3px; }
+
+.test-comment__title {
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.188rem; }
+
+.test-comment__date {
+  font-size: 0.7rem;
+  line-height: 1.188rem;
+  margin-left: 3px;
+  color: #808080; }
+
+.test-comment__text-wrapper {
+  background-color: #F2FBFF;
+  border: 1px solid #C4CBCF;
+  padding: 11px 20px 11px 20px;
+  position: relative;
+  margin-top: 12px; }
+
+.test-comment__text {
+  font-size: 0.8rem;
+  line-height: 1.188rem;
+  margin: 0; }
+
+.test-comment__text-wrapper::before, .test-comment__text-wrapper::after {
+  content: '';
+  position: absolute;
+  left: 23px;
+  top: -11px;
+  border: 10px solid transparent;
+  border-top: 10px solid #C4CBCF;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.test-comment__text-wrapper::after {
+  border-top: 10px solid #F2FBFF;
+  top: -9px;
+  left: 24px; }
+
+.test-comment + .test-comment {
+  margin-top: 16px; }
+
+.test-comments-footer {
+  background-color: #F2F2F2;
+  margin: 25px -10px 0 -10px;
+  padding: 28px 20px 34px 20px; }
+  @media screen and (min-width: 485px) {
+    .test-comments-footer {
+      margin: 25px -20px 0 -20px; } }
+
+.test-form__input {
+  width: 100%;
+  height: 63px;
+  resize: none;
+  border: 1px solid #000000; }
+
+.test-form__button {
+  display: block;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 2.6875rem;
+  background-color: #FDD639;
+  border-radius: 23px;
+  border: none;
+  margin: 20px auto 0 auto;
+  padding: 0 60px; }
+  @media screen and (max-width: 410px) {
+    .test-form__button {
+      padding: 0 30px; } }

@@ -4,32 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ba-starter</title>
+    <title>Test</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/app.css">
 </head>
 <body>
-    <header class="ba-header">
-        <div class="container">
-            <a href="" class="ba-logo"></a>
-            <nav>
-                <ul class="ba-menu">
-                    <li class="ba-menu__item"><a href="" class="ba-manu__link"></a></li>
-                    <li class="ba-menu__item"><a href="" class="ba-manu__link"></a></li>
-                    <li class="ba-menu__item"><a href="" class="ba-manu__link"></a></li>
-                    <li class="ba-menu__item"><a href="" class="ba-manu__link"></a></li>
-                </ul>
-            </nav>
+    <div class="test-card">
+        <div class="container container-wrapper">
+            <div class="test-user">
+                <img src="img/avatar.jpg" alt="photo" class="test-user__photo">
+                <div class="test-user__info">
+                   <span class="test-user__name">Вероника Ростова</span>
+                   <span class="test-user__position">Менеджер по продажам</span>
+                </div>
+                   <div class="test-user__comment-wrapper">
+                    <p class="test-user__comment">Подберу для вас самые лучшие предложения. 
+                         Мои услуги абсолютно бесплатны</p>
+                   </div>
+                <div class="test-services">
+                    <div class="test-services__title">Услуг</div>
+                    <span class="test-services__line"></span>
+                    <div class="test-services__graph">
+                        <div class="test-graph__row">
+                            <div class="test-graph__drawing"></div>
+                            <span class="test-graph__name">Ручное бронирование</span>
+                            <span class="test-graph__quantity">11</span>
+                        </div>
+                        <div class="test-graph__row">
+                            <div class="test-graph__drawing"></div>
+                            <span class="test-graph__name">Пакетные туры</span>
+                            <span class="test-graph__quantity">3</span>
+                        </div>
+                        <div class="test-graph__row">
+                            <div class="test-graph__drawing"></div>
+                            <span class="test-graph__name">Отели</span>
+                            <span class="test-graph__quantity">1</span>
+                        </div>
+                    </div>
+                    <span class="test-services__line"></span>
+                    <div class="test-services__total-wrapper">
+                        <span class="test-services__total-text">Всего</span>
+                        <span class="test-services__total">15</span>
+                    </div>
+                </div>
+            </div>
+            <div class="test-comments">
+                <div class="test-comments-wrapper">
+                    <div class="test-comments-header">
+                        <div class="test-header-wrapper">
+                            <span class="test-header__title">Последние отзывы</span>
+                            <a href="#" class="test-header__link">Все отзывы</a>
+                        </div>
+                        <div class="test-header__count-wrapper">
+                                <span class="test-header__total-likes">131</span>
+                                <span class="test-header__total-comments">14</span>
+                        </div>
+                    </div>
+                    <div class="test-comment">
+                        <div class="test-comment-wrapper">
+                            <span class="test-comment__title">Самуил</span>
+                            <span class="test-comment__date">13 октября 2011</span>
+                        </div>
+                        <div class="test-comment__text-wrapper">
+                            <p class="test-comment__text">Привет, Верунь! Ниче себе ты крутая. фотка класс!!!!</p>
+                        </div>
+                    </div>
+                    <div class="test-comment">
+                        <div class="test-comment-wrapper">
+                            <span class="test-comment__title">Лилия Семёнова</span>
+                            <span class="test-comment__date">14 октября 2011</span>
+                        </div>
+                        <div class="test-comment__text-wrapper">
+                            <p class="test-comment__text">Вероника, здравствуйте! Есть такой вопрос: 
+                                Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки 
+                                алмазов и торговли бриллиантами?</p>
+                        </div>
+                    </div>
+                    <div class="test-comment">
+                        <div class="test-comment-wrapper">
+                            <span class="test-comment__title">Лилия Семёнова</span>
+                            <span class="test-comment__date">14 октября 2011</span>
+                        </div>
+                        <div class="test-comment__text-wrapper">
+                            <p class="test-comment__text">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-comments-footer">
+                    <form action="" class="test-footer-form">
+                        <textarea id='form-input' class="test-form__input"></textarea>
+                        <button type="submit" class="test-form__button">Написать консультанту</button>
+                    </form>
+                </div>
+            </div>
         </div>
-    </header>
-    <main>
-        <section class="ba-section">
-            <div class="container"></div>
-        </section>
-    </main>
-    <footer class="ba-footer">
-        <div class="container"></div>
-    </footer>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
